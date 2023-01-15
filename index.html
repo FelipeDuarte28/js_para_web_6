@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio6_conversor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+    <hr>
+    <h1>Conversor de Monedas Nacional</h1>
+    <hr>
+    <div class="container">
+        <h2>Pesos CLP</h2>
+        <input type="number" name="number" id="input-clp" min="0" placeholder="Monto a convertir...">
+        <h3>Moneda a convertir</h3>
+        <select id="input-coin">
+                <option value="dolar">Dolar</option>
+                <option value="euro">Euro</option>
+                <option value="uf">UF</option>
+        </select>
+        <button id="btnConvertir">Convertir</button>
+        <p>Valor Cambio en CLP: <b id="valorCambio"></b></p>
+        <p>Resultado: <b id="resultado"></b></p>
+    </div>
+    <div class="grafica">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
